@@ -1,0 +1,39 @@
+5. Create database
+To create a new database execute the following command.
+use DATABASE_NAME. use is command and database_name is your databse.
+
+
+6. Know your current selected database
+> db
+Mydb
+>
+db represent the current database where we are working.
+
+
+7. Create collection
+To create the new collection execute the following commands
+Syntax: db.createCollection(name)
+
+> use Firstdb
+switched to db Firstdb
+> db.createCollection("Employee")
+{ "ok" : 1 }
+>
+
+
+8. To check collections list
+To get the list of collections created execute the following command
+Syntax: show collections
+
+> show collections
+Employee
+>
+
+
+10. Drop collection
+To drop the selected collection execute the following command
+Syntax: db.COLLECTION_NAME.drop()
+
+> db.Employee.drop()
+true
+>

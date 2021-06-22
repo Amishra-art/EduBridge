@@ -1,0 +1,46 @@
+CRUD OPERATION IN MongoDB..
+
+
+(CRUD)
+
+CREATE
+Creation and insertion in MongoDB. As We know that mongodb is document
+oriented database. so a collection will be containing multiple documents.
+
+Collection Creation: To create a collection in the mongodb, we can use the
+createCollection() method.
+
+Syntax: db.createCollection().
+
+Document Insertion: To insert document in collection, we have to use the
+insert() method.
+
+Syntax: db.<collection_name>.insert(document)
+
+the documents should be in JSON format.
+
+
+READ
+Reade opration from MongoDB Collections: To reade the document from the
+collection we can use the find() method. and documents are containing Key value pairs
+
+Syntax: db.<collection_name>.find()
+
+To display the result in a better way, we can use the pretty() method.
+
+Syntax: db.<collection_name>.find().pretty()
+
+
+UPDATE:
+To update the document we will use the update() method for the first match
+and updateMany() for all documents.
+
+Syntax: db.<collection_name>.update(<selection_logic>,<Updated_Data>)
+
+
+DELETE:
+To delete the document we will use the remove() method.
+Syntax: db.<collection_name>.remove(<selection_logic>) 
+
+To remove all entries, we use remove command like this.
+Syntax: db.<collection_name>.remove({}).
